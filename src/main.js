@@ -23,7 +23,7 @@ new Vue({
     }, 1000);
   },
   methods: {
-    register(data) {
+    register() {
       alert(JSON.stringify(this.tableData) + '登録しました！');
     }
   },
