@@ -17,14 +17,20 @@ new Vue({
     show: false
   },
   created() {
-    setTimeout(() => {
-      this.tableData = [{"name":"apple","price":200},{"name":"orange","price":120}];
+    $.getJSON('tableData.php', (data) => {
+      this.tableData = data;
       this.show = true;
-    }, 1000);
+    });
   },
   methods: {
     register() {
-      alert(JSON.stringify(this.tableData) + '登録しました！');
+      $.ajax({
+        type: 'POST',
+        url: 'tableData.php',
+        data: {data: this.tableData}
+      }).then(function () {
+        alert('登録しました！');
+      });
     }
   },
 });
