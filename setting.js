@@ -1,0 +1,1 @@
+const colHeaders = ['name', 'price'];

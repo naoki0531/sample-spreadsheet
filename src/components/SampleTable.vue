@@ -13,7 +13,7 @@
       return {
         root: 'test-hot',
         hotSettings: {
-          colHeaders: ['name', 'price'],
+          colHeaders: colHeaders,
           rowHeaders: true,
           data: this.data
         },
