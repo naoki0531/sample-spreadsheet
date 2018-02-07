@@ -1,6 +1,17 @@
 # spread-sample
 
-> A Vue.js project
+```
+npm install
+
+npm run build
+
+cp -rf dist/* server/
+
+php -S localhost:3333
+```
+
+http://localhost:3333
+
 
 ## Build Setup
 

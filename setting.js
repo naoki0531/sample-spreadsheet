@@ -1,1 +1,4 @@
-const colHeaders = ['name', 'price'];
+let hotSettings = {
+	colHeaders: ['name', 'price'],
+	rowHeaders: true,
+}
