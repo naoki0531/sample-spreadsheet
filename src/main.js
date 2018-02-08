@@ -27,7 +27,7 @@ new Vue({
       $.ajax({
         type: 'POST',
         url: 'tableData.php',
-        data: {data: this.tableData}
+        data: {data: JSON.stringify(this.tableData)}
       }).then(function () {
         alert('登録しました！');
       });
