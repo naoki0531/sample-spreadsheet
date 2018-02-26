@@ -25,8 +25,8 @@
 
 <style>
     #test-hot {
-        width: 600px;
-        height: 200px;
+        min-width: 600px;
+        min-height: 1500px;
         overflow: hidden;
     }
 </style>
