@@ -20,13 +20,22 @@
 			HotTable
 		},
 		props: ['data'],
+        mounted: function() {
+			this.$nextTick(() => {
+				document.getElementById('test-hot').style.height = 'auto';
+            });
+        }
 	}
 </script>
 
 <style>
     #test-hot {
         min-width: 600px;
-        min-height: 1500px;
+        height: 600px;
         overflow: hidden;
+    }
+
+    .wtHolder {
+        height: auto !important;
     }
 </style>
